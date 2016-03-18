@@ -5,4 +5,24 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.5 }
 
+\bibitem[Buerger 1989]{Buerger1989}
+\abntrefinfo{Buerger}{BUERGER}{1989}
+{BUERGER, D.~J. \textbf{LaTeX for scientists and engineers}. Singapura:
+  McGraw-Hill, 1989.}
+
+\bibitem[Kopka e Daly 2003]{Kopka2003}
+\abntrefinfo{Kopka e Daly}{KOPKA; DALY}{2003}
+{KOPKA, H.; DALY, P.~W. \textbf{Guide to LaTeX}. 4. ed. Boston: Addison-Wesley,
+  2003.}
+
+\bibitem[Lamport 1986]{Lamport1986}
+\abntrefinfo{Lamport}{LAMPORT}{1986}
+{LAMPORT, L. \textbf{LaTeX: a document preparation system}. Boston:
+  Addison-Wesley, 1986.}
+
+\bibitem[Mittelbach et al. 2004]{Mittelbach2004}
+\abntrefinfo{Mittelbach et al.}{MITTELBACH et al.}{2004}
+{MITTELBACH, F. et al. \textbf{The LaTeX companion}. 2. ed. Boston:
+  Addison-Wesley, 2004.}
+
 \end{thebibliography}

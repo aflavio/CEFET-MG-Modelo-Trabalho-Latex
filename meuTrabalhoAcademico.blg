@@ -19,6 +19,8 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: ./03-elementos-pos-textuais/myRefs.bib
+Warning--I didn't find a database entry for "LaTeX2009"
+Warning--I didn't find a database entry for "BibTeX2009"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -28,44 +30,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 7 entries,
+You've used 11 entries,
             6714 wiz_defined-function locations,
-            1210 strings with 9721 characters,
-and the built_in function-call counts, 2309 in all, are:
-= -- 257
-> -- 3
-< -- 3
-+ -- 52
-- -- 3
-* -- 90
-:= -- 293
-add.period$ -- 0
-call.type$ -- 8
-change.case$ -- 21
-chr.to.int$ -- 13
-cite$ -- 0
-duplicate$ -- 28
-empty$ -- 299
-format.name$ -- 0
-if$ -- 636
+            1238 strings with 10173 characters,
+and the built_in function-call counts, 5295 in all, are:
+= -- 482
+> -- 108
+< -- 5
++ -- 91
+- -- 35
+* -- 289
+:= -- 698
+add.period$ -- 14
+call.type$ -- 12
+change.case$ -- 58
+chr.to.int$ -- 23
+cite$ -- 4
+duplicate$ -- 192
+empty$ -- 551
+format.name$ -- 154
+if$ -- 1358
 int.to.chr$ -- 6
 int.to.str$ -- 3
-missing$ -- 71
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 47
+missing$ -- 151
+newline$ -- 24
+num.names$ -- 20
+pop$ -- 156
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 36
 quote$ -- 0
-skip$ -- 353
+skip$ -- 512
 stack$ -- 1
-substring$ -- 79
-swap$ -- 3
+substring$ -- 150
+swap$ -- 69
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
+while$ -- 26
 width$ -- 0
-write$ -- 8
+write$ -- 66
+(There were 2 warnings)

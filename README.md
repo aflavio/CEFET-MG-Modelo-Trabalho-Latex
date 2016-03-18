@@ -6,11 +6,14 @@ Modelo de trabalho acadêmico Latex para o CEFET-MG usando regras da ABNT.
 
 Faça o checkout:
 
-git clone https://github.com/aflavio/cefet-MG-latex/
-make
+```bash
+      git clone https://github.com/aflavio/cefet-MG-latex/
+      make
+```
 
 O comando make irá executar as instruções dentro do arquivo makefile
 
+**Dica**: Aconselho usar o editor: [TexStudio](http://www.texstudio.org/)
 
 ## Creditos
 

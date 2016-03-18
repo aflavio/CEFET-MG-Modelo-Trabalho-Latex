@@ -24,4 +24,4 @@ Henrique E. Borges, Denise de Souza, Cristiano Fraga G. Nunes, Lauro César
 
 ## Licença
 
-TODO: Write license
+GNU GENERAL PUBLIC LICENSE

@@ -1,0 +1,175 @@
+%
+% Modelo de trabalho acadêmico para disciplinas em português brasileiro e em 
+% conformidade com as normas da ABNT. Melhor visualizado em 80 colunas.
+%
+% Documento principal
+% Data: 18 de março de 2016
+%
+% *****************************************************************************
+% *  Centro Federal de Educação Tecnológica de Minas Gerais - CEFET-MG        *
+% *                                                                           *
+% *                                                                           *
+% *  Autor que adaptou : Augusto Morais <aflavio@gmail.com>                   * 
+% *  Source: https://github.com/aflavio/cefet-MG-latex                         
+% *                                                                           *
+% *                                                                           *
+% *  Autor: Henrique E. Borges <henrique@lsi.cefetmg.br>                      *
+% *  Autor: Denise de Souza <densouza@gmail.com>                              *
+% *  Autor: Cristiano Fraga G. Nunes <cfgnunes@gmail.com>                     *
+% *  Autor: Lauro César <https://code.google.com/p/abntex2/                   *
+% *                                                                           *
+% *****************************************************************************
+
+
+
+\documentclass[
+      %twoside,         % Impressão em frente (anverso) e verso. Oposto a oneside
+      oneside,          % Impressão apenas no anverso. Oposto a twoside
+      a4paper,          % Tamanho do papel
+      english,          % Idioma adicional para hifenização
+      brazilian,        % O ultimo idioma será o principal idioma do documento    
+]{abntex2-cefetmg} 
+
+
+
+% -----------------------------------------------------------------------------
+%    Configura as citações bibliográficas conforme a norma ABNT
+% -----------------------------------------------------------------------------
+
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf, 
+abnt-emphasize=bf, 
+bibjustif, 
+recuo=0cm,
+abnt-doi=expand,        % Expande um endereço com doi: para http://dx.doi.org/
+abnt-url-package=url,   % utiliza o pacote url
+abnt-refinfo=yes,       % utiliza o estilo bibliográfico abnt-refinfo
+abnt-etal-cite=3, 
+abnt-etal-list=3,
+abnt-thesis-year=final]{abntex2cite}    % Formata as citações conforme ABNT
+
+
+% -----------------------------------------------------------------------------
+%    Pacotes utilizados 
+% -----------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc}     % Usa codificação UTF-8
+\usepackage[T1]{fontenc}        % Seleção de código de fonte
+
+% Fonts: Times, LAtin Modern, Palatino, Latin Modern, Helvetica
+\usepackage[scaled]{helvet}		  
+\usepackage{scalefnt}			      
+%\usepackage{times}				      
+%\usepackage{lmodern}			      
+%\usepackage{palatino}			    
+%\usepackage{lmodern}			      
+
+\renewcommand*\familydefault{\sfdefault} 	
+
+% Inserção de caracteres gregos, matematicos, etc
+\usepackage{upgreek}			      
+\usepackage{latexsym}			      
+\usepackage{amsfonts, amssymb, amsmath, dsfont}		
+
+
+\usepackage{lscape}             % Páginas em modo "paisagem"
+\usepackage{indentfirst}        % Indenta o primeiro parágrafo de cada seção.
+\usepackage{microtype}          % Melhora a justificação do documento
+\usepackage{hyperref}           % Usado para criar “hyperlinks” no PDF
+\usepackage{breakurl}           % Permite quebra de linha em URLs longas
+\usepackage{graphicx}           % Inclusão de gráficos e figuras
+\usepackage{tikz}               % Pacote para desenhos
+\usepackage{color, colortbl}    % Controle das cores
+\usepackage[bottom]{footmisc}   % Notas de rodapé sempre na mesma posição
+\usepackage{bookmark}           % Cria menu de bookmarks
+\usepackage{verbatim}           % Apresenta texto tal como escrito no doc.
+\usepackage{multirow, array}    % Permite tabelas com múltiplas linhas e colunas
+\usepackage{booktabs}           % Réguas horizontais em tabelas
+\usepackage{float}              % Tabelas/figuras em ambiente multi-colunas
+\usepackage{subeqnarray}        % Permite subnumeracao de equações
+
+\usepackage[pointedenum]{paralist}              % Listas numeradas/bullets
+\usepackage[algoruled, portuguese]{algorithm2e} % algoritmos em Português
+
+\usepackage{makeidx}            % Usado para produzir índice remissivo (glossário)
+	\makeindex                  % Compila o índice
+	
+	
+% -----------------------------------------------------------------------------	
+%   Pacotes DESABILITADOS POR DEFAULT
+% -----------------------------------------------------------------------------
+%\usepackage[hyphens]{url}  % Melhora apresentação de URLs
+%\usepackage{url}           % Melhora apresentação de URLs
+%\usepackage{lettrine}      % Primeira letra do início de um texto é aumentada
+%\usepackage{balance}       % Balanceia o texto no artigo
+%\usepackage{nomencl}       % Usado para produzir lista de símbolos	
+%\usepackage{subfig}        % Permite posicionar figuras
+%\usepackage{picinpar}      % Permite posicionar imagens em parágrafos
+%\usepackage{psfrag}        % Inclusão de símbolos latex em figuras eps
+
+
+
+% Insere e constroi alguns elementos pré-textuais
+
+\include{./01-elementos-pre-textuais/capa}
+
+% -----------------------------------------------------------------------------
+%   Configurações de aparência do PDF final
+% -----------------------------------------------------------------------------
+
+\definecolor{blue}{RGB}{13,71 ,161}	% Paleta de cor do Google Material Design
+
+\makeatletter
+\hypersetup{
+	portuguese,
+  colorlinks=true,  
+	linkcolor=blue,			
+	citecolor=blue,			
+	filecolor=blue,			
+	urlcolor=blue, 			
+	breaklinks=true,
+	pdftitle={\@title},
+	pdfauthor={\@author},
+	pdfkeywords={abnt, latex, abntex, abntex2}
+}
+\makeatother
+
+
+% -----------------------------------------------------------------------------
+%   Hifenização de palavras não constantes do dicionário
+% -----------------------------------------------------------------------------
+
+\hyphenation{
+		qua-dros-cha-ve
+		Bras-nett
+		Kat-sa-gge-los
+}
+
+
+% -----------------------------------------------------------------------------
+%   Inclui todos os arquivos do trabalho acadêmico
+% -----------------------------------------------------------------------------
+
+\begin{document}
+
+\frenchspacing    % Retira o espaço extra desnecessário nas frases
+
+
+% Elementos pré-textuais: CAPA
+\pretextual
+\imprimircapa
+\include{./01-elementos-pre-textuais/sumario}		
+
+% Insere os elementos textuais
+\textual
+\include{./02-elementos-textuais/introducao}			
+\include{./02-elementos-textuais/metodologia}			
+\include{./02-elementos-textuais/resultados}		
+\include{./02-elementos-textuais/conclusao}				
+
+%   Insere os elementos pós-textuais
+\postextual
+\include{./03-elementos-pos-textuais/referencias}
+
+
+\end{document}

@@ -7,7 +7,7 @@ Modelo de trabalho acadêmico Latex para o CEFET-MG usando regras da ABNT.
 Faça o checkout:
 
 ```bash
-      git clone https://github.com/aflavio/cefet-MG-latex/
+      git clone https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex.git
       make
 ```
 

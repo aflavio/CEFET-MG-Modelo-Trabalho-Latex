@@ -87,6 +87,7 @@ abnt-thesis-year=final]{abntex2cite}    % Formata as citações conforme ABNT
 \usepackage{booktabs}           % Réguas horizontais em tabelas
 \usepackage{float}              % Tabelas/figuras em ambiente multi-colunas
 \usepackage{subeqnarray}        % Permite subnumeracao de equações
+\usepackage{listings}        % Permite subnumeracao de equações
 
 \usepackage[pointedenum]{paralist}              % Listas numeradas/bullets
 \usepackage[algoruled, portuguese]{algorithm2e} % algoritmos em Português
@@ -122,7 +123,7 @@ abnt-thesis-year=final]{abntex2cite}    % Formata as citações conforme ABNT
 \makeatletter
 \hypersetup{
 	portuguese,
-  colorlinks=true,  
+    colorlinks=true,  
 	linkcolor=blue,			
 	citecolor=blue,			
 	filecolor=blue,			
@@ -134,6 +135,23 @@ abnt-thesis-year=final]{abntex2cite}    % Formata as citações conforme ABNT
 }
 \makeatother
 
+% For Python
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
 
 % -----------------------------------------------------------------------------
 %   Hifenização de palavras não constantes do dicionário
@@ -165,11 +183,11 @@ abnt-thesis-year=final]{abntex2cite}    % Formata as citações conforme ABNT
 \include{./02-elementos-textuais/introducao}			
 \include{./02-elementos-textuais/metodologia}			
 \include{./02-elementos-textuais/resultados}		
-\include{./02-elementos-textuais/conclusao}				
+%\include{./02-elementos-textuais/conclusao}				
 
 %   Insere os elementos pós-textuais
 \postextual
-\include{./03-elementos-pos-textuais/referencias}
+%\include{./03-elementos-pos-textuais/referencias}
 
 
 \end{document}

@@ -129,6 +129,10 @@
 \providecommand{\imprimirsubtitulo}{}
 \newcommand{\subtitulo}[1]{\renewcommand{\imprimirsubtitulo}{#1}}
 
+%	Comandos de dados - Nome do Professor
+\providecommand{\imprimirprofessor}{}
+\newcommand{\professor}[1]{\renewcommand{\imprimirprofessor}{#1}}	
+
 
 %   Comandos de dados - Instituição do orientador
 \providecommand{\imprimirinstOrientador}{}
@@ -285,15 +289,19 @@
 			\imprimirlogoinstituicao{} \\
 			\normalfont\scshape{\imprimirinstituicao} \\
 			\normalfont\scshape{\imprimirprograma} \\
+			\normalfont\scshape\textbf{Professor: \imprimirprofessor} \\
 		\end{center}
 
 		\vspace*{\fill}
 
 		\begin{center}
 			\ABNTEXchapterfont\HUGE\scshape\imprimirtitulo
+		\end{center}
+
+		\begin{center}
 			\abntex@ifnotempty{\imprimirsubtitulo}
 			{
-				{\ABNTEXchapterfont\Huge\scshape{\hspace*{-0.3em}: }}{\ABNTEXchapterfont\Huge\imprimirsubtitulo}
+				{\ABNTEXchapterfont\Huge\scshape{\hspace*{-0.3em} }}{\ABNTEXchapterfont\Huge\imprimirsubtitulo}
 			}
 		\end{center}
 
@@ -458,3 +466,42 @@
 		\end{minipage}
 	\end{flushright}
 }
+
+
+
+
+% -----------------------------------------------------------------------------
+%   PYTHON STYLES
+% -----------------------------------------------------------------------------
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+		keywords={typeof, null, catch, switch, in, int, str, float, self},
+		keywordstyle=\color{deepgreen}\bfseries,
+		ndkeywords={boolean, throw, import},
+		ndkeywords={return, class, if ,elif, endif, while, do, else, True, False , catch, def},
+		ndkeywordstyle=\color{deepblue}\bfseries,
+		identifierstyle=\color{black},
+		sensitive=false,		
+		language=Python,
+		basicstyle=\ttm,
+		otherkeywords={self},             % Add keywords here
+		keywordstyle=\ttb\color{deepblue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false,           % 
+		comment=[l]{\%},
+        morecomment=[s]{/*}{*/},
+        commentstyle=\color{gray}\ttfamily,
+        stringstyle=\color{red}\ttfamily
+	}}
+	
+	
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}

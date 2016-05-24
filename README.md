@@ -24,9 +24,20 @@ Requisitos Recomendados:
       apt-get install texlive-full texlive-fonts-extra
 ```
 
+
 O comando make irá executar as instruções dentro do arquivo makefile
 
-**Dica**: Aconselho usar o editor: [TexStudio](http://www.texstudio.org/)
+## Dicas 
+
+Aconselho usar o editor: [TexStudio](http://www.texstudio.org/)
+Talvez seja necessário modificar o mapeamento de char do gtk para o cedilla funcionar corretamente no texStudio: 
+
+**Acentos
+
+```bash
+      vi /usr/share/X11/locale/en_US.UTF-8/Compose
+```
+Procure por todos as instâncias de ć e troque por ç e do Ć para Ç .
 
 ## Creditos
 

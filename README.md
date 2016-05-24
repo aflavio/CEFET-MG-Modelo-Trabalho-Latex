@@ -11,11 +11,17 @@ Faça o checkout:
       make
 ```
 
-Requisitos:
+Requisitos Basicos:
+
 
 ```bash
       apt-get install texlive-publishers texlive-lang-portuguese texlive-latex-extra texlive-fonts-recommended
       apt-get install texlive-fonts-extra 
+```
+
+Requisitos Recomendados:
+```bash
+      apt-get install texlive-full texlive-fonts-extra
 ```
 
 O comando make irá executar as instruções dentro do arquivo makefile

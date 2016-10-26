@@ -10,28 +10,30 @@ Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-M
       git clone https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex.git
 ```
 
-Requisitos Basicos:
+### Requisitos Basicos:
 
-** Compilador Latex - [Miktex](http://miktex.org/download)
-** Editor Latex - [TexStudio](http://www.texstudio.org/)
+*Compilador Latex - [Miktex](http://miktex.org/download)
+
+*Editor Latex - [TexStudio](http://www.texstudio.org/)
 
 
-Requisitos Recomendados:
+### Requisitos Recomendados:
 
-** [Git](https://git-scm.com/download/win)
-** [Tortoise Git](https://tortoisegit.org/)
+*[Git](https://git-scm.com/download/win)
+
+*[Tortoise Git](https://tortoisegit.org/)
 
 
 ## Instalação e Execução - Linux (testado: debian/Ubuntu)
 
-Faça o checkout:
+Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex/archive/master.zip):
 
 ```bash
       git clone https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex.git
       make
 ```
 
-Requisitos Basicos:
+### Requisitos Basicos:
 
 
 ```bash
@@ -39,13 +41,13 @@ Requisitos Basicos:
       apt-get install texlive-fonts-extra 
 ```
 
-Requisitos Recomendados:
+### Requisitos Recomendados:
 ```bash
       apt-get install texlive-full texlive-fonts-extra
 ```
 
-
 O comando make irá executar as instruções dentro do arquivo makefile
+
 
 ## Dicas 
 

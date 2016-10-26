@@ -2,6 +2,26 @@
 
 Modelo de trabalho acadêmico Latex para o CEFET-MG usando regras da ABNT.
 
+## Instalação e Execução - Windows (testado: windows 10)
+
+Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex/archive/master.zip):
+
+```
+      git clone https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex.git
+```
+
+Requisitos Basicos:
+
+** Compilador Latex - [Miktex](http://miktex.org/download)
+** Editor Latex - [TexStudio](http://www.texstudio.org/)
+
+
+Requisitos Recomendados:
+
+** [Git](https://git-scm.com/download/win)
+** [Tortoise Git](https://tortoisegit.org/)
+
+
 ## Instalação e Execução - Linux (testado: debian/Ubuntu)
 
 Faça o checkout:

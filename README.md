@@ -2,7 +2,7 @@
 
 Modelo de trabalho acadêmico Latex para o CEFET-MG usando regras da ABNT.
 
-## Instalação e Execução
+## Instalação e Execução - Linux (testado: debian/Ubuntu)
 
 Faça o checkout:
 
@@ -32,14 +32,13 @@ O comando make irá executar as instruções dentro do arquivo makefile
 Aconselho usar o editor: [TexStudio](http://www.texstudio.org/)
 Talvez seja necessário modificar o mapeamento de char do gtk para o cedilla funcionar corretamente no texStudio: 
 
-**Acentos
 
 ```bash
       vi /usr/share/X11/locale/en_US.UTF-8/Compose
 ```
 Procure por todos as instâncias de ć e troque por ç e do Ć para Ç .
 
-## Creditos
+## Créditos
 
 Este projeto foi baseado no trabalho do Laboratório de Sistemas Inteligentes 
 do CEFET-MG e customizado em cima do modelo criado por: 

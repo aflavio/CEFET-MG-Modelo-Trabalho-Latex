@@ -30,24 +30,29 @@ Depois de instalado o Miktex e TexStudio, abra o arquivo .tex no TexStudio e fa�
 
 ## Instalação e Execução - Linux (testado: debian/Ubuntu)
 
+
 Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex/archive/master.zip):
 
 ```bash
       git clone https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex.git
+```
+
+### Debian/Ubuntu (testado)
+
+```bash
+      apt-get install texlive-publishers texlive-lang-portuguese texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive=full
+```
+
+
+### Arch
+
+```bash
+      pacman -S texlive-science texlive-fontsextra texlive-latexextra texlive-publishers texlive-langextra
+```
+
+### Compilando:
+```bash
       make
-```
-
-### Requisitos Basicos:
-
-
-```bash
-      apt-get install texlive-publishers texlive-lang-portuguese texlive-latex-extra texlive-fonts-recommended
-      apt-get install texlive-fonts-extra 
-```
-
-### Requisitos Recomendados:
-```bash
-      apt-get install texlive-full texlive-fonts-extra
 ```
 
 O comando make irá executar as instruções dentro do arquivo makefile

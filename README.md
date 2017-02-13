@@ -50,12 +50,17 @@ Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-M
       pacman -S texlive-science texlive-fontsextra texlive-latexextra texlive-publishers texlive-langextra
 ```
 
-### Compilando:
+### CTAN Module
+
+Recomenda-se instalar o modulo [Texlive - Local Manager](https://aur.archlinux.org/packages/texlive-localmanager-git/) para gerenciar 
+as dependencias do Latex (CTAN). Depois de instalado, você pode adicionar o módulo [abntex2](http://www.abntex.net.br/).
+
 ```bash
-      make
+      tlocalmgr install abntex2
 ```
 
-O comando make irá executar as instruções dentro do arquivo makefile
+### Compilando:
+Recomendo usar o TexStudio. O makefile no Arch não fucionou muito bem. 
 
 
 ## Dicas 

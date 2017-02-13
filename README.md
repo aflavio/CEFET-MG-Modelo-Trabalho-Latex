@@ -28,7 +28,7 @@ Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-M
 Depois de instalado o Miktex e TexStudio, abra o arquivo .tex no TexStudio e faça o download dos pacotes básicos utilizados no template. O TexStudio informará que será preciso fazer esses downloads, basta confirmar o mirror de onde será realizado o download. Depois disso, é só editar o template e depois compilar e gerar o PDF (tecla F5).
 
 
-## Instalação e Execução - Linux (testado: debian/Ubuntu)
+## Instalação e Execução
 
 
 Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-MG-Modelo-Trabalho-Latex/archive/master.zip):
@@ -44,7 +44,7 @@ Faça o checkout ou faça o [download do zip](https://github.com/aflavio/CEFET-M
 ```
 
 
-### Arch
+### Arch (testado)
 
 ```bash
       pacman -S texlive-science texlive-fontsextra texlive-latexextra texlive-publishers texlive-langextra
